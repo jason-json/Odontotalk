@@ -31,4 +31,5 @@ Bundle in public folder
 
 ## Authors
 
-* *Jason Figueroa* - *json* - [jason-json](https://github.com/jason-json)
+* *Jason Figueroa* - *github* - [jason-json](https://github.com/jason-json)
+* *Jason Figueroa* - *gmail* - jasonfi28@gmail.com
