@@ -1,0 +1,73 @@
+.form-inscripcion {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 45px auto;
+  border-radius: 6px;
+  padding: 20px;
+  background: $green_ligth;
+  color: $green_dark;
+  text-align: left;
+  
+  h2 {
+    text-align: center;
+    color: $green_dark !important;
+  }
+
+  input[type=text], input[type=email] {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: none;
+    color: $green_dark;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 5px; 
+  }
+
+
+  textarea{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: none;
+    color: $green_dark;
+    resize: none;
+  }
+  .btn-send {
+    margin: 30px auto;
+    background: $green_dark;
+    color: $white;
+    font-size: 28px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+
+  }
+
+  @media (min-width: 300px) {
+    width: 250px;
+  }
+
+  @media (min-width: 480px) {
+    width: 380px;
+  }
+
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+
+  @media (min-width: 961px) {
+    width: 600px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 500px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 700px;
+  }
+
+  @media (min-width: 1680px) {
+    width: 700px;
+  }
+
+}

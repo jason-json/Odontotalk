@@ -1,0 +1,76 @@
+//main top logo
+.logo{
+  position: absolute;
+  top: 0;
+  margin-left: 20px; 
+  @media (min-width:1680px) {
+    margin-left: 70px;
+  }
+  animation: topToBottom 0.8s;
+  -moz-animation: topToBottom 0.8s; /* Firefox */
+  -webkit-animation: topToBottom 0.8s; /* Safari and Chrome */
+  -ms-animation:topToBottom 0.8s;  /* Internet Explorer */
+  -o-animation: topToBottom 0.8s; /* Opera */
+}
+
+.header{
+  background: $green_ligth;
+  margin-top: 90.5px;
+  text-align: center;
+  color: $green_dark;
+  padding: 10px 0 10px 0;
+}
+.main-background{
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  @media (min-width: 300px) {
+    margin-top: 1520px;
+  }
+
+  @media (min-width: 480px) {
+    margin-top: 920px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 720px;
+  }
+
+  @media (min-width: 961px) {
+    margin-top: 895px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 895px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 120px;
+  }
+
+  @media (min-width: 1680px) {
+   
+  }
+}
+
+.button-inscribase{
+  display: block;
+  width: 100%;
+  background: $green_ligth;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+
+.main-background-gracias{
+  position: absolute;
+  z-index: -1;
+  max-width: auto;
+  max-height: 100vh;
+  
+}

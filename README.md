@@ -3,7 +3,8 @@
 Meeting of dentists.
 
 ## Production website
-https://www.odontotalk.com)
+<a href="https://www.odontotalk.com" target="_blank">https://www.odontotalk.com</a>
+
 
 ## Getting Started
 Responsive web site with HTML, SASS, PHP MAIL. Built with Grunt JS

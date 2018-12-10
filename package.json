@@ -1,0 +1,31 @@
+{
+  "name": "odontotalk",
+  "version": "1.0.0",
+  "description": "html css grid - php mail",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/jason-json/odontotalk.git"
+  },
+  "author": "Jason Figueroa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jason-json/odontotalk/issues"
+  },
+  "homepage": "https://gitlab.com/jason-json/odontotalk#README",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-reload": "^0.2.0",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.9.4"
+  }
+}
