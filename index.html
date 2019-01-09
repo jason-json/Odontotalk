@@ -187,44 +187,46 @@
 
       </div>
       <!-- FORM INSCRIPCION -->
-      <form action="src/sendMail.php" method="post" class="form-inscripcion" id="inscribirse">
+      <form action="src/sendMail.php" method="post" class="form-inscripcion" id="inscribirse" onsubmit="return validateForm()">
         <h2>FORMULARIO DE INSCRIPCIÓN</h2>
         <label for="nombre">Nombre Completo:</label>
-        <input type="text" name="nombre" id="nombre" required>
+        <input type="text" name="nombre" id="nombre" >
 
         <label for="especialidad">Especialidad:</label>
-        <input type="text" name="especialidad" id="especialidad" required>
+        <input type="text" name="especialidad" id="especialidad" >
 
         <label for="telefono">Telefóno:</label>
-        <input type="text" name="telefono" id="telefono" required>
+        <input type="text" name="telefono" id="telefono" >
 
         <label for="celular">Celular:</label>
-        <input type="text" name="celular" id="celular" required>
+        <input type="text" name="celular" id="celular" >
 
         <label for="email">E-mail:</label>
         <input type="email" name="email" id="email">
 
         <label for="deposito">Número de Depósito:</label>
-        <input type="text" name="deposito" id="deposito" required>
+        <input type="text" name="deposito" id="deposito" >
 
         <label for="lugar_trabajo">Lugar de trabajo (clínica privada ó CCSS):</label>
-        <input type="text" name="lugar_trabajo" id="lugar_trabajo" required>
+        <input type="text" name="lugar_trabajo" id="lugar_trabajo" >
 
         <label for="codigo_agremiado">Código de agremiado profesional:</label>
-        <input type="text" name="codigo_agremiado" id="codigo_agremiado" required>
+        <input type="text" name="codigo_agremiado" id="codigo_agremiado" >
 
         <label for="cedula">Número de cédula:</label>
-        <input type="text" name="cedula" id="cedula" required>
+        <input type="text" name="cedula" id="cedula" >
 
         <label for="nacionalidad">Nacionalidad:</label>
-        <input type="text" name="nacionalidad" id="nacionalidad" required>
+        <input type="text" name="nacionalidad" id="nacionalidad" >
 
         <label for="como_conoce">¿Cómo conoce de Odontotalk?</label>
-        <textarea name="como_conoce" id="como_conoce" cols="30" rows="5" required></textarea>
+        <textarea name="como_conoce" id="como_conoce" cols="30" rows="5" ></textarea>
 
         <label for="porque_asistir">¿Por qué desea asistir? </label>
-        <textarea name="porque_asistir" id="porque_asistir" cols="30" rows="5" required></textarea>
-
+        <textarea name="porque_asistir" id="porque_asistir" cols="30" rows="5" ></textarea>
+        
+        <div id="validation-form"><h3>Por favor ingrese todos los datos del formulario</h3></div>
+        
         <input type="submit" value="Enviar" class="btn-send">
       </form>
       <!-- MAIL INFORMATION -->

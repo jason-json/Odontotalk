@@ -42,72 +42,62 @@
   $subject = "Odontotalk formulario de inscripción";
   $message = '';
 
-  if ($nombre != "" && $especialidad != "" && $telefono != "" && 
-      $celular != "" && $email != "" && $deposito != "" && 
-      $lugar_trabajo != "" &&  $codigo_agremiado != "" && $cedula != "" && 
-      $nacionalidad != "" && $como_conoce != "" && $porque_asistir != ""
-  ) {
-
-    //html mail table
-    $message .= '<html>';
-    $message .= '<table  width="60%"  height="20%" align="center" style="border-style:solid; border-width:1px; border-color:#b1b5bc;" cellpadding="2" cellspacing=”0″  >';
-    $message .= '<tr align="center">';
-    $message .= '<th bgcolor="#025862" aling="center" width:"100%" colspan="2" style="font-size:20px"><font color="#fff">Odontotalk formulario de inscripción</font></th>';
-    $message .= '</tr>';            
-    $message .= '<tr height="10%" style="font-size:18px;"  bgcolor="#f2f2f2">';
-    $message .= '<td><strong>Nombre:</strong></td>';
-    $message .= '<td>'.$nombre.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
-    $message .= '<td><strong>Especialidad:</strong></td>';
-    $message .= '<td>'.$especialidad.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
-    $message .= '<td><strong>Telefóno:</strong></td>';
-    $message .= '<td>'.$telefono.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
-    $message .= '<td><strong>Celular:</strong></td>';
-    $message .= '<td>'.$celular.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
-    $message .= '<td><strong>E-mail:</strong></td>';
-    $message .= '<td>'.$email.'</td>';
-    $message .=  '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
-    $message .= '<td><strong>Número de Depósito:</strong></td>';
-    $message .= '<td>'.$deposito.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
-    $message .= '<td><strong>Lugar de trabajo (clínica privada ó CCSS):</strong></td>';
-    $message .= '<td>'.$lugar_trabajo.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
-    $message .= '<td><strong>Código de agremiado profesional:</strong></td>';
-    $message .= '<td>'.$codigo_agremiado.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
-    $message .= '<td><strong>Número de cédula:</strong></td>';
-    $message .= '<td>'.$cedula.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
-    $message .= '<td><strong>Nacionalidad:</strong></td>';
-    $message .= '<td>'.$nacionalidad.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
-    $message .= '<td><strong>¿Cómo conoce de Odontotalk?</strong></td>';
-    $message .= '<td>'.$como_conoce.'</td>';
-    $message .= '</tr>';
-    $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
-    $message .= '<td><strong>¿Por qué desea asistir?</strong></td>';
-    $message .= '<td>'.$porque_asistir.'</td>';
-    $message .= '</tr>';
-    $message .= '</table>';
-    $message .= '</html>';
-
-  } else {
-   $message = "No se ha podido recibir los datos.";
-  }
+  //html mail table
+  $message .= '<html>';
+  $message .= '<table  width="60%"  height="20%" align="center" style="border-style:solid; border-width:1px; border-color:#b1b5bc;" cellpadding="2" cellspacing=”0″  >';
+  $message .= '<tr align="center">';
+  $message .= '<th bgcolor="#025862" aling="center" width:"100%" colspan="2" style="font-size:20px"><font color="#fff">Odontotalk formulario de inscripción</font></th>';
+  $message .= '</tr>';            
+  $message .= '<tr height="10%" style="font-size:18px;"  bgcolor="#f2f2f2">';
+  $message .= '<td><strong>Nombre:</strong></td>';
+  $message .= '<td>'.$nombre.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
+  $message .= '<td><strong>Especialidad:</strong></td>';
+  $message .= '<td>'.$especialidad.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
+  $message .= '<td><strong>Telefóno:</strong></td>';
+  $message .= '<td>'.$telefono.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
+  $message .= '<td><strong>Celular:</strong></td>';
+  $message .= '<td>'.$celular.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
+  $message .= '<td><strong>E-mail:</strong></td>';
+  $message .= '<td>'.$email.'</td>';
+  $message .=  '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
+  $message .= '<td><strong>Número de Depósito:</strong></td>';
+  $message .= '<td>'.$deposito.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
+  $message .= '<td><strong>Lugar de trabajo (clínica privada ó CCSS):</strong></td>';
+  $message .= '<td>'.$lugar_trabajo.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
+  $message .= '<td><strong>Código de agremiado profesional:</strong></td>';
+  $message .= '<td>'.$codigo_agremiado.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
+  $message .= '<td><strong>Número de cédula:</strong></td>';
+  $message .= '<td>'.$cedula.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
+  $message .= '<td><strong>Nacionalidad:</strong></td>';
+  $message .= '<td>'.$nacionalidad.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#f2f2f2">';
+  $message .= '<td><strong>¿Cómo conoce de Odontotalk?</strong></td>';
+  $message .= '<td>'.$como_conoce.'</td>';
+  $message .= '</tr>';
+  $message .= '<tr   style="font-size:18px;" bgcolor="#ddd">';
+  $message .= '<td><strong>¿Por qué desea asistir?</strong></td>';
+  $message .= '<td>'.$porque_asistir.'</td>';
+  $message .= '</tr>';
+  $message .= '</table>';
+  $message .= '</html>';
   
   if (mail($to,$subject,$message, $headers)) {
     header("Location: ../gracias.html");
