@@ -29,16 +29,29 @@
   $nacionalidad = $_POST['nacionalidad'];
   $como_conoce = $_POST['como_conoce'];//¿Cómo conoce de Odontotalk?
   $porque_asistir = $_POST['porque_asistir'];//¿Por qué desea asistir?
+  
+
+  //CSV backup
+  $csvfile = 'form-info.csv';
+  $csvNewLine = array($nombre.",".$especialidad.",".$telefono.",".$celular.",".$email.",".$deposito.",".$lugar_trabajo.",".$codigo_agremiado.",".$cedula.",".$nacionalidad.",".$como_conoce.",".$porque_asistir);
+  $file = fopen($csvfile, "a");
+  foreach ($csvNewLine as $line) {
+    fputcsv($file, explode(',', $line));
+  }
+  fclose($file);
+
 
   //MAIL SETTINGS
   $headers = "From: inscripciones@odontotalk.com" . "\r\n";
   // $headers .= "Reply-To: ". strip_tags($_POST['req-email']) . "\r\n";
-  $headers .= "Bcc: jason@miweb.cr,yarelis@miweb.cr\r\n";
+  // $headers .= "Bcc: jason@miweb.cr,yarelis@miweb.cr\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
   
-  // $to = "jason@miweb.cr";
-  $to = "inscripciones@odontotalk.com";
+
+
+  $to = "jason@miweb.cr";
+  // $to = "inscripciones@odontotalk.com";
   $subject = "Odontotalk formulario de inscripción";
   $message = '';
 
@@ -106,6 +119,6 @@
     header("Location: ../gracias.html");
     die();
   }
-      
+
 
 ?>
